@@ -2,13 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Wireshark CSV Analyzer</title>
-  <script defer src="IP_enumeration.js"></script>
+  <title>Wireshark CSV Analyzer - IP Enumerator</title>
+  <script defer src="IPenumerate.js"></script>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
-    h1 { color: #333; }
-    input[type="file"] { margin-bottom: 20px; }
-    pre { background: white; padding: 15px; border-radius: 6px; overflow-x: auto; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1 {
+      color: #333;
+    }
+    input[type="file"], input[type="text"], select, button {
+      margin: 5px 0;
+      padding: 8px;
+      font-size: 14px;
+    }
+    label {
+      margin-right: 8px;
+    }
+    table {
+      width: 100%;
+      margin-top: 15px;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background: #eee;
+    }
+    canvas {
+      margin-top: 10px;
+      max-width: 100%;
+    }
   </style>
 </head>
 <body>
